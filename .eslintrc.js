@@ -12,6 +12,14 @@ module.exports = {
         "no-unused-vars": ["error"],
         "@typescript-eslint/no-unsafe-call": "off",
         "@typescript-eslint/no-unsafe-assignment": "off",
+        "@typescript-eslint/no-unsafe-argument": "off",
+        "@typescript-eslint/consistent-type-assertions": "off",
+      },
+    },
+    {
+      files: ["src/types/*.ts"],
+      rules: {
+        "@typescript-eslint/consistent-type-definitions": "off",
       },
     },
   ],
