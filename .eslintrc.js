@@ -10,6 +10,8 @@ module.exports = {
       files: ["*.ts"],
       rules: {
         "no-unused-vars": ["error"],
+        "@typescript-eslint/no-unsafe-call": "off",
+        "@typescript-eslint/no-unsafe-assignment": "off",
       },
     },
   ],
