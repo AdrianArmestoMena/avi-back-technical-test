@@ -10,7 +10,7 @@ describe("Given a general error midelware", () => {
   } as Partial<Response>;
 
   describe("When it is called with a next function, a responose a request and an error", () => {
-    test("The it should call the status method with error status code", async () => {
+    test("The it should call the status method with error status code", () => {
       const error = {
         name: "error",
         message: "error",
@@ -22,7 +22,7 @@ describe("Given a general error midelware", () => {
 
       expect(res.status).toHaveBeenCalledWith(error.statusCode);
     });
-    test("Then it should call the json method with the error message", async () => {
+    test("Then it should call the json method with the error message", () => {
       const error = {
         name: "error",
         message: "error",
