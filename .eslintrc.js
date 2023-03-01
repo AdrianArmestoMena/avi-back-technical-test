@@ -14,6 +14,7 @@ module.exports = {
         "@typescript-eslint/no-unsafe-assignment": "off",
         "@typescript-eslint/no-unsafe-argument": "off",
         "@typescript-eslint/consistent-type-assertions": "off",
+        "no-negated-condition": "off",
       },
     },
     {
